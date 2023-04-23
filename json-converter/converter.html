@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./converter.css">
+</head>
+
+<body>
+    <div class="header">
+        JSON Comparator
+    </div>
+    <div class="container">
+        <div class="json-container">
+            <div class="json-string json-one">
+                <div class="json-string-heading">
+                    JSON 1
+                </div>
+                <textarea name="jsonString1" id="jsonString1" cols="30" rows="10" class="json-string-area">
+                    {
+                        "CvlEntities": [
+                            {
+                                "CvlId": "SubCategory",
+                                "EntityTypeId": "Garment"
+                            },
+                            {
+                                "CvlId": "SubCategory",
+                                "EntityTypeId": "GarmentAllLocale"
+                            }
+                        ]
+                    }
+                </textarea>
+            </div>
+            <div class="json-string json-two">
+                <div class="json-string-heading">
+                    JSON 2
+                </div>
+                <textarea name="jsonString2" id="jsonString2" cols="30" rows="10" class="json-string-area">
+                    {
+                        "CvlEntities": [
+                            {
+                                "CvlId": "SubCategory",
+                                "EntityTypeId": "Garment"
+                            },
+                            {
+                                "CvlId": "SubCategory",
+                                "EntityTypeId": "GarmentAllLocale"
+                            }
+                        ]
+                    }
+                </textarea>
+            </div>
+        </div>
+        <button type="button" class="button" onclick="compare()">Compare & Show differances</button>
+        <lable class="result-message" id="lblResultMessage"></lable>
+        <div class="json-compare-result">
+            <div class="json-string-heading">
+                json-compare-result
+            </div>
+            <textarea name="jsonStringcompared" id="jsonStringcompared" cols="30" rows="10" class="json-string-area"></textarea>
+        </div>
+    </div>
+    <script src="./converter.js"></script>
+</body>
+
+</html>

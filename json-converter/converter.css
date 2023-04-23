@@ -1,0 +1,85 @@
+html,
+body {
+    margin: 0px;
+}
+
+.header {
+    text-align: center;
+    background: #fff;
+    font-size: 3rem;
+}
+
+.container {
+    position: absolute;
+    top: 4rem;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.json-container {
+    height: 500px;
+    display: inline-flex;
+    width: 100%;
+}
+
+.json-string {
+    border-radius: 3px 4px;
+    width: 50%;
+    position: relative;
+    margin: 2rem;
+    padding: 0.5rem;
+}
+
+.json-one{
+    background: powderblue;
+}
+
+.json-two{
+    background: rgba(224, 188, 111, 0.817);
+}
+
+.json-string-heading {
+    height: 10%;
+    width: 98%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.json-string-area {
+    width: 98%;
+    height: 90%;
+}
+
+.button {
+    background-color: powderblue;
+    border: rgb(164, 209, 215);
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.button :hover {
+    background-color: red;
+}
+
+.json-compare-result {
+    background: rgb(244, 221, 235);
+    border-radius: 3px 4px;
+    height: 500px;
+    width: 50%;
+    margin: 2rem;
+    padding: 0.5rem;
+}
+
+.result-message{
+    color: rgba(5, 64, 126, 0.817);
+    font-size: 2rem;
+}

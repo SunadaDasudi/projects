@@ -1,0 +1,12 @@
+{
+    "CvlEntities": [
+      {
+        "CvlId": "SubCategory",
+        "EntityTypeId": "Garment"
+      },
+      {
+        "CvlId": "SubCategory",
+        "EntityTypeId": "GarmentAllLocale"
+      }
+    ]
+  }

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+    background-color: var(--e-global-color-astglobalcolor4);
+    color: rgb(21, 21, 57);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 1;
+}
+
+.menu-icon {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    padding: 20px 0 0 0;
+    cursor: pointer;
+}
+
+.menu-icon img {
+    width: 50px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+nav {
+    position: fixed;
+    width: 300px;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 4px;
+    display: none;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin-top: 2px;
+}
+
+nav>ul>li>img {
+    width: 80%;
+    height: auto;
+    align-self: center;
+    margin: 10px 0 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* styles for screens smaller than 600px */
+@media (max-width: 600px) {
+    nav{
+        width: 70px;
+    }
+  }
+  
+  /* styles for screens larger than 600px */
+  @media (min-width: 600px) {
+    nav{
+        width: 100px;
+    }
+  }

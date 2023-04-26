@@ -1,6 +1,9 @@
 
 (function () {
     emailjs.init('eaQ24HoGrtEEJKPkr');
+
+    const toggle_bar = document.querySelector('.toggle-bar');
+    toggle_bar.addEventListener('click', showMenu);
 })();
 
 window.onload = function () {
@@ -22,4 +25,20 @@ window.onload = function () {
         //         console.log('FAILED...', error);
         //     });
     });
+}
+
+function showMenu() {
+    const nav_bar = document.querySelector('header>nav');
+    nav_bar.classList.toggle('show');
+
+    let start = Date.now();
+
+    let timer = setInterval(function () {
+        let timePassed = Date.now() - start;
+
+        nav_bar.style.left = (20 + timePassed) / 5 + 'px';
+
+        if (timePassed > 500) clearInterval(timer);
+
+    }, 20);
 }

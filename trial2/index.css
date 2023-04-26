@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-behavior: 500ms;
+    /* set the scrolling duration to 200ms */
+}
+
 
 :root {
     font-size: 13px;
@@ -88,7 +94,7 @@ main {
 
 .container {
     width: 100%;
-    margin: 0 0 10% 0;
+    margin: 0 0 5% 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -253,9 +259,10 @@ section {
 }
 
 .skill-set img {
-    width: 10%;
+    width: 5%;
     height: auto;
     margin: 30px;
+    margin-bottom: 0;
 }
 
 .skill-set img:hover {

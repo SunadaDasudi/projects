@@ -15,13 +15,14 @@ html {
 :root {
     font-size: 13px;
     font-family: monospace;
-    font-weight: 100;
-    color: #9d8d8f;
+    font-weight: normal;
+    color: whitesmoke;
 }
 
 body {
     width: 100vw;
-    background-color: #46344e;
+    /* background-color: #46344e; */
+    color: black;
     padding: 0 0 20px 0;
 
     display: flex;
@@ -33,8 +34,8 @@ body {
 .side-menu {
     position: fixed;
     top: 5vh;
-    left: 0;
-    width: 4vw;
+    left: 1vw;
+    width: 3vw;
     height: auto;
     border-radius: 3px;
     margin: 5px;
@@ -56,8 +57,8 @@ header {
     left: 4.5vw;
     width: 10vw;
     height: 90vh;
-    background-color: whitesmoke;
-    border-radius: 3px;
+    background-color: black;
+    border-radius: 5px;
     z-index: 1;
     display: none;
 }
@@ -84,6 +85,9 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     cursor: pointer;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    font-weight: bold;
 }
 
 nav ul li a img {
@@ -97,6 +101,7 @@ header img:hover {
 
 footer {
     width: 80%;
+    font-size: 1.5rem;
     margin-top: 0;
     margin-bottom: 0;
     height: 50px;
@@ -149,11 +154,13 @@ main {
 
 /* CSS */
 .button {
-    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    background-color: black;
+    /* linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%); */
     border-radius: 8px;
     border-style: none;
     box-sizing: border-box;
-    color: #FFFFFF;
+    /* color: #46344e; */
+    color: white;
     cursor: pointer;
     flex-shrink: 0;
     font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -180,7 +187,6 @@ main {
     color: black
 }
 
-
 section {
     min-height: 100vh;
     padding: 5% 0 0 0;
@@ -193,6 +199,9 @@ section {
 #home h1 {
     font-size: 5rem;
     font-family: Georgia;
+    text-align: left;
+    /* color: whitesmoke; */
+    color: black;
 }
 
 #home h2 {
@@ -239,8 +248,20 @@ section {
     border-radius: 10px;
 }
 
+.project-image-container img {
+    width: 80%;
+    height: auto;
+    transform: translate(-3%, -3%);
+    border-radius: 10px;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
 .read-more {
-    color: whitesmoke;
+    color: black;
     text-decoration: none;
     display: flex;
     flex-direction: row;
@@ -257,12 +278,13 @@ section {
     font-size: 3.2em;
     text-align: center;
     margin: 0 0 20px 0;
+    color: black;
 }
 
 .project-header {
     text-transform: uppercase;
     font-size: 2.5rem;
-    color: #52708c;
+    color: black;
     text-align: left;
     margin: 0 0 20px 0;
 }
@@ -303,6 +325,26 @@ section {
     margin: 20px;
 }
 
+.about-me-text {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+
+
+.about-me-text::before {
+    content: "";
+    padding: 5px;
+    display: inline-block;
+    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid yellow;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
 .skill-set {
     display: flex;
     flex-direction: row;
@@ -327,12 +369,19 @@ section {
 #contact .container {
     width: 100%;
     height: auto;
-    background-image: url('./images/contact.jpg');
-    background-color: #DBA901;
+    background-image: url('./images/contact/contact-background.jpg');
+
     background-size: cover;
     border-radius: 5px 5px;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.personal-info {
+    text-align: end;
+    align-content: end;
+    font-size: 2rem;
+    color: black;
 }
 
 .contact-icon {
@@ -370,6 +419,7 @@ section {
     height: 50px;
     padding: 10px;
     font-family: monospace;
+    color: #46344e;
     font-size: 1.5rem;
     border-radius: 3px;
     margin-bottom: 30px;
@@ -517,43 +567,6 @@ ul li .descr::before {
     bottom: 0.25rem;
 }
 
-@media (min-width: 40rem) {
-    ul {
-        grid-template-columns: 1fr var(--line-w) 1fr;
-    }
-
-    ul::before {
-        grid-column: 2;
-    }
-
-    ul li:nth-child(odd) {
-        grid-column: 1;
-    }
-
-    ul li:nth-child(even) {
-        grid-column: 3;
-    }
-
-    /* start second card */
-    ul li:nth-child(2) {
-        grid-row: 2/4;
-    }
-
-    ul li:nth-child(odd) .date::before {
-        clip-path: polygon(0 0, 100% 0, 100% 100%);
-        left: 0;
-    }
-
-    ul li:nth-child(odd) .date::after {
-        transform: translate(-50%, -50%);
-        left: calc(100% + var(--col-gap) + var(--line-w) / 2);
-    }
-
-    ul li:nth-child(odd) .date {
-        border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
-    }
-}
-
 .credits {
     margin-top: 1rem;
     text-align: right;
@@ -561,73 +574,4 @@ ul li .descr::before {
 
 .credits a {
     color: var(--color);
-}
-
-/* @media (max-width: 768px) {
-    header {
-        width: 20vw;
-        position: fixed;
-    }
-} */
-
-@media (max-width: 768px) {
-
-    :root {
-        font-size: 6px;
-    }
-
-    header {
-        display: none;
-    }
-
-    main {
-        width: 100vw;
-        padding: 10px;
-    }
-
-    section {
-        min-height: 0;
-    }
-
-    #home h1 {
-        font-size: 4rem;
-    }
-
-    .button {
-        font-size: 01rem;
-        width: 10rem;
-        height: 2.5rem;
-        padding: 0 0.5rem;
-    }
-
-    .container:nth-child(even) {
-        flex-direction: column;
-    }
-
-    .container:nth-child(odd) {
-        flex-direction: column-reverse;
-    }
-
-    .hide {
-        display: none;
-    }
-
-    .image-container {
-        width: 100%;
-        height: fit-content;
-        border: 5px solid #52708c;
-        border-radius: 10px;
-    }
-
-    .card {
-        width: 100%;
-        height: auto;
-    }
-
-    .one-col,
-    .two-col,
-    .three-col,
-    .four-col {
-        width: 100%;
-    }
 }

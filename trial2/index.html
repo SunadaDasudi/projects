@@ -6,40 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Sunada Dasudi</title>
 </head>
 
 <body>
-    <header>
-        <div class="header-img">
-            <img src="./images/header/signature-icon.jpg" alt="">
-        </div>
+    <div class="side-menu"><img src="./images/header/side-menu-removebg-preview.png" alt=""></div>
+    <header id="header-menu">
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#skills">Skill set</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home"><img src="./images/header/home-icon.jpg" alt="" title="Home"></a></li>
+                <li><a href="#about-me"><img src="./images/header/about-me-icon.jpg" alt="" title="About Me"></a></li>
+                <li><a href="#portfolio"><img src="./images/header/portfolio.jpg" alt="" title="Portfolio"></a></li>
+                <li><a href="#skills"><img src="./images/header/skills.png" alt="" title="Skill Set"></a></li>
+                <li><a href="#contact"><img src="./images/header/contact.jpg" alt="" title="Contact"></a></li>
+                <li> <a href="https://www.linkedin.com/in/sunada-dasudi-86158051/" target="_blank"> <img
+                            src="./images/header/linkedin.png" alt="" title="Linked In"></a></a></li>
             </ul>
         </nav>
-        <a href="https://www.linkedin.com/in/sunada-dasudi-86158051/" target="_blank"> <img
-                src="./images/header/linkedin.png" alt=""></a>
+
     </header>
     <main>
         <section id="home">
             <div class="container">
-                <div class="two-col">
-                    <p>I'm a</p>
-                    <h1>FULL STACK SOFTWARE DEVELOPER<span>.</span></h1>
-                    <button class="button" role="button">Previous Projects</button>
+                <div class="two-col intro">
+                    <h1><span class="yellow-coloured-text">Sunada Dasudi.</span></h1>
+                    <p class="light-colored-text">I'm a</p>
+                    <h2><span class="light-coloured-text"> FULL STACK </span><br>
+                        SOFTWARE <br>
+                        DEVELOPER</h2>
                 </div>
-                <div class="two-col">
-                </div>
-            </div>
-        </section>
-        <section id="about-me">
-            <div class="container">
                 <div class="two-col">
                     <div class="image-container">
                         <div class="image-background"></div>
@@ -48,7 +44,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="two-col">
+            </div>
+        </section>
+        <section id="about-me">
+            <div class="container">
+                <div class="four-col">
                     <div class="section-header left">
                         About me
                     </div>
@@ -59,7 +59,33 @@
                         voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </div>
-                    <button class="button light">Resume</button>
+                </div>
+                <div class="four-col">
+                    <h1>Employment History</h1>
+                    <ul>
+                        <li style="--accent-color:#41516C">
+                            <div class="date">Systems Engineer | Sep 2010 to Sep 2012</div>
+                            <div class="title">Siemens Technology and Services Pvt. Ltd.</div>
+                            <div class="descr">Requirements gathering, Detailed level design, Development & Testing to
+                                ensure
+                                that optimal resolutions are achieved.</div>
+                        </li>
+                        <li style="--accent-color:#FBCA3E">
+                            <div class="date">Senior Systems Engineer | Oct 2012 to Mar 2018</div>
+                            <div class="title">Siemens Technology and Services Pvt. Ltd.</div>
+                            <div class="descr">Key focus on the successful roll-out of projects by defining scope,
+                                analyzing requirements, prioritizing tasks, identifying dependencies, and evaluating
+                                risks &
+                                issues as per pre-set budgets.</div>
+                        </li>
+                        <li style="--accent-color:#E24A68">
+                            <div class="date">PIM Developer | Mar 2022 to Sep 2024</div>
+                            <div class="title">Avensia AB</div>
+                            <div class="descr">Requirements gathering, Detailed level design, Development & Testing to
+                                ensure
+                                that optimal resolutions are achieved.</div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -86,6 +112,9 @@
                         cupidatat
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </div>
+                    <a href="" class="read-more" target="_blank">
+                        <hr>> Read more
+                    </a>
                 </div>
             </div>
             <div class="container">
@@ -100,6 +129,10 @@
                         cupidatat
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </div>
+                    <a href="" class="read-more" target="_blank">
+                        <hr>> Read more
+                    </a>
+
                 </div>
                 <div class="two-col">
                     <div class="image-container">
@@ -123,6 +156,10 @@
                             cupidatat
                             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </div>
+                        <a href="" class="read-more" target="_blank">
+                            <hr>> Read more
+                        </a>
+
                     </div>
                 </div>
                 <div class="container">
@@ -137,15 +174,16 @@
                             cupidatat
                             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </div>
+                        <a href="" class="read-more" target="_blank">
+                            <hr>> Read more
+                        </a>
+
                     </div>
                     <div class="two-col">
                         <div class="image-container">
                             <img src="./images/project/project-photo-gallary.jpeg" alt="">
                         </div>
                     </div>
-                </div>
-                <div class="four-col center">
-                    <button class="button">View More</button>
                 </div>
             </div>
         </section>
@@ -233,7 +271,7 @@
                     </div>
                     <div class="contact-icon">
                         <img src="./images/contact/phonenumber.png" alt="">
-                        <p>+76 0762976296</p>
+                        <p>+76 0762976206</p>
                         <img src="./images/contact/mail.png" alt="">
                         <p>sunada.dasudi2010@gmail.com</p>
                         <img src="./images/contact/address.png" alt="">
@@ -256,18 +294,14 @@
         </section>
     </main>
     <footer>
-        <div class="header-img">
-            <img src="./images/header/signature-icon.jpg" alt="">
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href=""> 2023 - Sunada Dasudi, All rights reserved</a></li>
-            </ul>
-        </nav>
+        2023 - Sunada Dasudi, All rights reserved
     </footer>
 
     <!-- HTML !-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
     <script src="./index.js"></script>
 
 </body>

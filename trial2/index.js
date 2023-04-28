@@ -11,12 +11,13 @@ const nav_links = document.querySelectorAll('header>nav>ul>li>a');
     nav_links.forEach(nav => {
         const sectionId = nav.getAttribute('href').replace('#', '');
         const section = document.getElementById(sectionId);
-        nav.addEventListener('click', function (event) {
-            event.preventDefault();
-            section.scrollIntoView({ behavior: 'smooth' });
-            header_menu.classList.toggle('show');
-            ScrollReveal().reveal('.header-menu', slideDown);
-        });
+        if (section)
+            nav.addEventListener('click', function (event) {
+                event.preventDefault();
+                section.scrollIntoView({ behavior: 'smooth' });
+                header_menu.classList.toggle('show');
+                ScrollReveal().reveal('.header-menu', slideDown);
+            });
     })
 })();
 
@@ -28,9 +29,11 @@ function sendContactFrom(event) {
     emailjs.init('eaQ24HoGrtEEJKPkr');
     event.preventDefault();
 
+    let email = document.getElementById('email').value;
+    if (!email) return;
     var templateParams = {
         name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
+        email: email,
         phoneNumber: document.getElementById('phonenumber').value,
         message: document.getElementById('message').value
     };

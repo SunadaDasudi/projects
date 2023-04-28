@@ -46,8 +46,19 @@
         padding: 10px;
     }
 
+    .side-menu {
+        width: 5vw;
+    }
+
     header {
-        width: 40vw;
+        width: 90%;
+        left: 7vw;
+        background-color: lightcyan;
+    }
+
+    nav ul li a {
+        font-size: 2.5rem;
+        color: black;
     }
 
     section {
@@ -59,9 +70,9 @@
     }
 
     .button {
-        font-size: 01rem;
-        width: 10rem;
-        height: 2.5rem;
+        font-size: 2rem;
+        width: 15rem;
+        height: 3.5rem;
         padding: 0 0.5rem;
     }
 
@@ -84,8 +95,10 @@
         border-radius: 10px;
     }
 
-    .card {
-        width: 100%;
+    .card,
+    .project {
+        width: 80%;
+        min-height: 0;
         height: auto;
     }
 
@@ -94,5 +107,43 @@
     .three-col,
     .four-col {
         width: 100%;
+    }
+
+
+    .skill-set img {
+        width: 10%;
+        height: auto;
+        margin: 10px;
+        margin-bottom: 0;
+    }
+
+    .image-container {
+        margin-left: 0;
+    }
+
+    .personal-info {
+        text-align: center;
+        font-size: 2rem;
+        color: black;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1.8rem;
+    }
+
+    footer {
+        height: 70px;
+        padding: 0 10px 0 10px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .icons {
+        justify-content: center
+    }
+
+    footer>.three-col {
+        align-items: center;
     }
 }

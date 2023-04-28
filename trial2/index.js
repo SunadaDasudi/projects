@@ -74,7 +74,7 @@ ScrollReveal().reveal('.intro', slideRight);
 ScrollReveal().reveal('#about-me .two-col .description', slideLeft);
 ScrollReveal().reveal('.employment-history', slideUp);
 
-ScrollReveal().reveal('#portfolio .container', slideLeft);
+ScrollReveal().reveal('.portfolio', slideDown);
 ScrollReveal().reveal('.skill-set', slideDown);
 ScrollReveal().reveal('#skills .card', slideUp);
 

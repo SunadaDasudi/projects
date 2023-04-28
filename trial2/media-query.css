@@ -65,11 +65,11 @@
         padding: 0 0.5rem;
     }
 
-    .container:nth-child(even) {
+    .portfolio:nth-child(even) {
         flex-direction: column;
     }
 
-    .container:nth-child(odd) {
+    .portfolio:nth-child(odd) {
         flex-direction: column-reverse;
     }
 

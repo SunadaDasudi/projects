@@ -1,0 +1,38 @@
+.basketItem {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+    min-height: 200px;
+}
+
+.basketItem>img {
+    width: 150px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.item_title {
+    font-weight: bold;
+    width: 60%;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* Number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.item__rating {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.item__details>button {
+    background: #F4D03F;
+    border: 1px solid;
+    margin-top: 10px;
+    padding: 3px;
+    color: #111;
+    border-radius: 3px;
+}

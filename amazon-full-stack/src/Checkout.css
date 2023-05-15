@@ -1,0 +1,27 @@
+.checkout {
+    background: #fff;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.checkout__left,
+.checkout__right {
+    padding: 20px;
+    height: max-content;
+    margin: 5px;
+}
+
+.checkout__left {
+    width: 70%;
+    margin: 20px;
+}
+
+.checkout__title {
+    margin-right: 10px;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}

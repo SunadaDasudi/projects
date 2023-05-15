@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Varela Round';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/varelaround/v20/w8gdH283Tvk__Lua32TysjIfp8uK.ttf) format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --accent-color: #45494E;
+    --gradient-color: #FBFBFB;
+}
+
+a:focus {
+    outline: none;
+    position: relative;
+}
+
+a:focus:after {
+    width: 50px;
+}
+
+a:after {
+    content: "";
+    background: #FBFBFB;
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    height: 3px;
+    width: 0;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+
+body {
+    background-color: linear-gradient(to right, #9bd9e8, #5d6b7e);
+    background-repeat: no-repeat;
+    font-family: "Varela Round", Nunito, Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

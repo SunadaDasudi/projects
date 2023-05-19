@@ -27,14 +27,14 @@ function Product({ id, title, price, rating, image }) {
                     {title}
                 </p>
                 <p className="product__price">
-                    <small>₹</small>
+                    <small>$</small>
                     <strong>{price}</strong>
                 </p>
                 <div className="product__rating">
                     {Array(rating)
                         .fill()
-                        .map(() => (
-                            <p>⭐</p>
+                        .map((_, i) => (
+                            <p key={i}>⭐</p>
                         ))}
                 </div>
             </div>

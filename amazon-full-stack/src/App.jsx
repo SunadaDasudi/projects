@@ -6,8 +6,6 @@ import { loadStripe } from '@stripe/stripe-js'
 import { Elements } from '@stripe/react-stripe-js'
 const stripe_public_api_key = 'pk_test_51N7vHaCN6CQfSvOSdOUUSqzBSi7S9pe0czsvyWLsK162OQ35WAwxb6NfFmPWmnEJNR0826vGtUAglc3UUZWKLFLv00ljuJy1zl';
 const promise = loadStripe(stripe_public_api_key)
-console.log(promise)
-
 
 import { FirebaseAppProvider } from 'reactfire';
 import firebaseConfig from './firebase';
@@ -19,7 +17,9 @@ import Home from './Home'
 import Checkout from './Checkout'
 import Login from './Login'
 import Payment from './Payment'
+import Orders from './Orders'
 import Footer from './Footer'
+import Firestore from './Firestore';
 
 function App() {
   const [{ }, dispatch] = useStateValue();
@@ -77,9 +77,16 @@ function App() {
                   <Checkout />
                 </>
               } />
+              <Route path='/orders' element={
+                <>
+                  <Header />
+                  <Orders />
+                </>
+              } />
               <Route path="/" element={
                 <>
                   <Header />
+                  {/* <Firestore></Firestore> */}
                   <Home />
                 </>
               } />

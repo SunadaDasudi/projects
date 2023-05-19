@@ -18,7 +18,7 @@ function Subtotal() {
             <>
                 <p>
                     Subtotal ({basket.length} items):
-                    <strong>{`${totalPrice}`}</strong>
+                    <small>$</small> <strong>{totalPrice}</strong>
                 </p>
                 <small className="subtotal__gift">
                     <input type="checkbox" /> This order contains a gift
@@ -27,7 +27,6 @@ function Subtotal() {
 
             <button onClick={e => {
                 navigate("/payment")
-                console.log('clicked')
             }}>Proceed to Checkout</button>
         </div>
     )

@@ -1,10 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
-// Add other Firebase services you need
-
-// Add other Firebase modules you need
-
 
 const firebaseConfig = {
     apiKey: "AIzaSyAwJ1U8as9NX4-waHAIVwOSm1gJuJJtpSM",
@@ -16,30 +12,9 @@ const firebaseConfig = {
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
-// const db = getFirestore();
+const db = getFirestore(firebaseApp);
 // const auth = getAuth();
 
-// signInWithEmailAndPassword(auth, email, password)
-//     .then((userCredential) => {
-//         // Handle successful sign-in
-//     })
-//     .catch((error) => {
-//         // Handle sign-in error
-//     });
 
-// createUserWithEmailAndPassword(auth, email, password)
-//     .then((userCredential) => {
-//         // User registration successful
-//         const user = userCredential.user;
-//         console.log('User registered:', user);
-//     })
-//     .catch((error) => {
-//         // User registration failed
-//         const errorCode = error.code;
-//         const errorMessage = error.message;
-//         console.error('Error registering user:', errorCode, errorMessage);
-//     });
-
-
-// export { db, auth }
+export { db }
 export default firebaseConfig

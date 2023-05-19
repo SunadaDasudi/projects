@@ -19,14 +19,14 @@ function BasketItem({ id, image, title, price, rating }) {
                     {title}
                 </p>
                 <div className="item__price">
-                    <small>₹</small>
+                    <small>$</small>
                     <strong>{price}</strong>
                 </div>
                 <div className="item__rating">
                     {Array(rating)
                         .fill()
-                        .map(() => (
-                            <p>⭐</p>
+                        .map((_, i) => (
+                            <p key={i}>⭐</p>
                         ))}
                 </div>
                 <button onClick={() => removeFromBasket(id)}>Remove from basket</button>

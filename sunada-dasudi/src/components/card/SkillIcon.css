@@ -1,0 +1,6 @@
+.skillIcon__image {
+    height: 4rem;
+    object-fit: contain;
+    margin: 20px;
+    margin-top: 5px;
+}

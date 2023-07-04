@@ -1,0 +1,23 @@
+.app {
+  width: 90%;
+  /* padding: 0 100px 0 100px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.app__content {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.section__title {
+  font-size: 2rem;
+}
+
+
+@media (max-width:600px) {
+  .app {
+    width: 100%;
+    padding-top: 100px;
+  }
+}

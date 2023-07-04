@@ -1,0 +1,32 @@
+.about {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__description {
+    width: 100%;
+    color: #847b7b;
+}
+
+.about__card {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+@media (max-width:600px) {
+    .about {
+        min-height: 0;
+    }
+
+    .about__card {
+        flex-direction: column;
+    }
+}

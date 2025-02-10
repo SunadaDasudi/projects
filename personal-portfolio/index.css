@@ -16,13 +16,12 @@ html {
     font-size: 13px;
     font-family: monospace;
     font-weight: normal;
-    color: whitesmoke;
 }
 
 body {
     width: 100%;
-    /* background-color: #46344e; */
-    color: black;
+    background-color: #025468;
+    color: whitesmoke;
     padding: 0;
 
     display: flex;

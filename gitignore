@@ -1,0 +1,43 @@
+# Ignore Visual Studio specific files
+.vs/
+*.user
+*.suo
+*.ntvs*
+*.njsproj
+*.sln.cache
+*.sln.docstates
+*.pdb
+*.opendb
+
+# Ignore build outputs
+bin/
+obj/
+out/
+*.exe
+*.dll
+*.log
+
+# Ignore NuGet packages
+packages/
+*.nupkg
+project.lock.json
+project.assets.json
+
+# Ignore Rider / ReSharper files
+.idea/
+*.sln.iml
+
+# Ignore publish output
+Publish/
+App.publish/
+
+# Ignore application config files
+appsettings.json
+appsettings.*.json
+
+# Ignore user-specific files
+*.config
+*.dbmdl
+*.log
+*.bak
+*.swp

@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\sundas\\OneDrive - Avensia AB\\Documents\\personal\\learning\\c#\\WebApi\\StartToFinishExample1\\ToDoApiClient\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ToDoApiClient.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ToDoApiClient.oyft8y31io.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\sundas\\OneDrive - Avensia AB\\Documents\\personal\\learning\\c#\\WebApi\\StartToFinishExample1\\ToDoApiClient\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\sundas\\OneDrive - Avensia AB\\Documents\\personal\\learning\\c#\\WebApi\\StartToFinishExample1\\ToDoApiClient\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sundas\\OneDrive - Avensia AB\\Documents\\personal\\learning\\c#\\WebApi\\StartToFinishExample1\\ToDoApiClient\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\sundas\\OneDrive - Avensia AB\\Documents\\personal\\learning\\c#\\WebApi\\StartToFinishExample1\\ToDoApiClient\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ToDoApiClient.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ToDoApiClient.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ToDoApiClient.props",
+      "PackagePath": "build\\ToDoApiClient.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ToDoApiClient.props",
+      "PackagePath": "buildMultiTargeting\\ToDoApiClient.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ToDoApiClient.props",
+      "PackagePath": "buildTransitive\\ToDoApiClient.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,67 @@
+﻿@page "/"
+@using System.Net.Http.Json
+@inject IHttpClientFactory factory
+@inject TokenModel tokenInfo
+
+<PageTitle>Home</PageTitle>
+
+@if (isLoggedIn)
+{
+    <h1>You are logged in.</h1>
+    <button class="btn btn-danger" @onclick="LogOut">Log Out</button>
+}
+else
+{
+    <h1>Please Log In</h1>
+
+    <EditForm Model="loginData" FormName="loginForm" OnSubmit="HandleValidSubmit">
+        @* <DataAnnotationsValidator /> *@
+
+        <InputText @bind-Value="loginData.UserName"/>
+        <ValidationMessage For="@(() => loginData.UserName)" />
+
+        <InputText type="password" @bind-Value="loginData.Password"/>
+        <ValidationMessage For="@(() => loginData.Password)" />
+
+        <button class="btn btn-success" type="submit" @onclick="HandleValidSubmit">Login</button>
+    </EditForm>
+}
+
+@code
+{
+    private AuthenticationModel loginData = new();
+    private bool isLoggedIn = false;
+
+    private async Task HandleValidSubmit()
+    {
+        Console.WriteLine($"Username: {loginData.UserName}, Password: {loginData.Password}");
+
+        try
+        {
+            var client = factory.CreateClient("apiClient");
+            var response = await client.PostAsJsonAsync("authentication/token", loginData);
+
+            if (response.IsSuccessStatusCode)
+            {
+                tokenInfo.Token = await response.Content.ReadAsStringAsync();
+                isLoggedIn = true;
+            }
+            else
+            {
+                Console.WriteLine("Login failed");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+        }
+
+        await InvokeAsync(StateHasChanged);
+    }
+
+    private void LogOut()
+    {
+        tokenInfo.Token = string.Empty;
+        isLoggedIn = false;
+    }
+}

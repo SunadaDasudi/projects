@@ -10,9 +10,10 @@
 *.opendb
 
 # Ignore build outputs
-bin/
-obj/
-out/
+**/bin/
+**/obj/
+
+**/out/
 *.exe
 *.dll
 *.log

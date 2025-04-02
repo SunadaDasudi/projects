@@ -1,0 +1,66 @@
+﻿@page "/"
+@using System.Net.Http.Json
+@inject IHttpClientFactory _httpClientFactory
+@inject TokenModel _tokenInfo
+@rendermode InteractiveServer
+
+
+<PageTitle>Home</PageTitle>
+
+@if (isLoggedIn)
+{
+    <h1>Hello,</h1>
+    <button class="btn btn-danger" @onclick="LogOut">Log Out</button>
+}
+else
+{
+    <h1>Please login</h1>
+    <EditForm method="post" FormName="loginForm" Model="loginData" OnValidSubmit="HandleValidSubmit" style="width:50%;" Enhance>
+        <DataAnnotationsValidator />
+        <ValidationSummary class="text-danger" />
+
+        <div>
+            <label>Username:</label>
+            <InputText id="userName" @bind-Value="@loginData.Username" class="form-control" />
+            <ValidationMessage For="()=> loginData.Username" class="text-danger" />
+        </div>
+        <div>
+            <label>Password:</label>
+            <InputText id="password" @bind-Value="@loginData.Password" type="password" class="form-control" />
+            <ValidationMessage For="()=> loginData.Password" class="text-danger" />
+        </div>
+
+        <button type="submit" class="btn btn-success" style="margin-top:30px;">Log In</button>
+    </EditForm>
+}
+
+@code {
+    AuthenticationModel loginData = new AuthenticationModel();
+
+    bool isLoggedIn = false;
+
+    protected override void OnInitialized()
+    {
+        isLoggedIn = !string.IsNullOrEmpty(_tokenInfo.Token);
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        Console.WriteLine(loginData.ToString());
+        var _httpClient = _httpClientFactory.CreateClient("apiClient");
+        var response = await _httpClient.PostAsJsonAsync("api/Authentication/token", loginData);
+
+        if (response.IsSuccessStatusCode)
+        {
+            _tokenInfo.Token = await response.Content.ReadAsStringAsync();
+            isLoggedIn = true;
+            await InvokeAsync(StateHasChanged);
+        }
+    }
+
+    private void LogOut()
+    {
+        _tokenInfo.Token = string.Empty;
+        isLoggedIn = false;
+    }
+}

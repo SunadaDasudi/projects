@@ -1,0 +1,75 @@
+@MovieMeter.Api_HostAddress = https://localhost:7068
+
+
+
+POST {{MovieMeter.Api_HostAddress}}/api/login?api-version=1.0
+Content-Type: application/json
+
+{
+  "userid":"06148d3c-ea55-451f-a576-d0327d83c73f",
+  "email":"sunada.dasudi2010@gmail.com",
+  "password":"changeme"
+}
+
+###
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzaWQiOiIwNjE0OGQzYy1lYTU1LTQ1MWYtYTU3Ni1kMDMyN2Q4M2M3M2YiLCJlbWFpbCI6InN1bmFkYS5kYXN1ZGkyMDEwQGdtYWlsLmNvbSIsImFkbWluIjoiZmFsc2UiLCJ0cnVzdGVkX3VzZXIiOiJ0cnVlIiwibmJmIjoxNzQzMDg1NjM5LCJleHAiOjE3NDMwODkyMzksImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwNjgiLCJhdWQiOiJNb3ZpZU1ldGVyQXBpIn0.qjHrludg15KlGv53IwDpcJWooxUOEtGkIugj8Vn338M
+
+### Get All Movies
+GET {{MovieMeter.Api_HostAddress}}/api/movies
+Authorization: Bearer {{token}}
+
+### Create Movie
+POST {{MovieMeter.Api_HostAddress}}/api/movies
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+"Title": "",
+    "YearOfRelease": 2026,
+    "Genres": [
+      "Drama",
+      "Romance"
+    ]
+}
+
+### Get a movie by Id/ Slug
+@idOrSlug=string
+GET {{MovieMeter.Api_HostAddress}}/api/movies/827f9e4e-3ad8-41cf-8e39-f145951b5771
+Authorization: Bearer {{token}}
+
+### Delete movie
+DELETE {{MovieMeter.Api_HostAddress}}/api/movies/06148d3c-ea55-451f-a576-d0327d83c73f
+Authorization: Bearer {{token}}
+
+### Update movie
+PUT {{MovieMeter.Api_HostAddress}}/api/movies/06148d3c-ea55-451f-a576-d0327d83c73f
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "Title": "The Shawshank Redemption 123",
+    "YearOfRelease": 1995,
+    "Genres": [
+      "Drama",
+      "Romance"
+    ]}
+
+### Rate movie
+POST {{MovieMeter.Api_HostAddress}}/api/movies/9cf5b0ac-a779-4a1e-8b82-729fff2bce60/ratings
+Content-Type: application/json
+Authorization: Bearer {{token}}
+{
+  "rating":5
+}
+
+###  Delete Rating
+
+DELETE {{MovieMeter.Api_HostAddress}}/api/movies/9cf5b0ac-a779-4a1e-8b82-729fff2bce60/ratings
+Authorization: Bearer {{token}}
+
+###
+
+GET {{MovieMeter.Api_HostAddress}}/api/ratings/me
+Authorization: Bearer {{token}}
+
+###

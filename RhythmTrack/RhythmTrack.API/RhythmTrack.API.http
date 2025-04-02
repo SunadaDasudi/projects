@@ -1,0 +1,8 @@
+@RhythmTrack.API_HostAddress = https://localhost:7184
+
+
+###
+
+GET {{RhythmTrack.API_HostAddress}}/api/values
+
+###

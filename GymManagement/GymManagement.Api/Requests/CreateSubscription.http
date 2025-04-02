@@ -1,0 +1,12 @@
+@host=http://localhost:5205
+@adminId=b3f4e2c9-7d8b-4a5f-91f3-2c8d92e8c1a7
+
+POST {{host}}/api/Subscriptions
+Accept: application/json
+Content-Type: application/json
+
+{
+  "SubscriptionType": "Pro", 
+  "AdminId": "{{adminId}}"
+}
+

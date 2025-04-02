@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sundas\\OneDrive - Avensia AB\\Documents\\personal\\learning\\c#\\WebApi\\StartToFinishExample1\\ToDoApiClient\\ToDoApiClient.csproj": {}
+    "C:\\Users\\sundas\\OneDrive - Avensia AB\\Documents\\git-repo\\projects\\to-do-app\\ToDoApiClient\\ToDoApiClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sundas\\OneDrive - Avensia AB\\Documents\\personal\\learning\\c#\\WebApi\\StartToFinishExample1\\ToDoApiClient\\ToDoApiClient.csproj": {
+    "C:\\Users\\sundas\\OneDrive - Avensia AB\\Documents\\git-repo\\projects\\to-do-app\\ToDoApiClient\\ToDoApiClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sundas\\OneDrive - Avensia AB\\Documents\\personal\\learning\\c#\\WebApi\\StartToFinishExample1\\ToDoApiClient\\ToDoApiClient.csproj",
+        "projectUniqueName": "C:\\Users\\sundas\\OneDrive - Avensia AB\\Documents\\git-repo\\projects\\to-do-app\\ToDoApiClient\\ToDoApiClient.csproj",
         "projectName": "ToDoApiClient",
-        "projectPath": "C:\\Users\\sundas\\OneDrive - Avensia AB\\Documents\\personal\\learning\\c#\\WebApi\\StartToFinishExample1\\ToDoApiClient\\ToDoApiClient.csproj",
+        "projectPath": "C:\\Users\\sundas\\OneDrive - Avensia AB\\Documents\\git-repo\\projects\\to-do-app\\ToDoApiClient\\ToDoApiClient.csproj",
         "packagesPath": "C:\\Users\\sundas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sundas\\OneDrive - Avensia AB\\Documents\\personal\\learning\\c#\\WebApi\\StartToFinishExample1\\ToDoApiClient\\obj\\",
+        "outputPath": "C:\\Users\\sundas\\OneDrive - Avensia AB\\Documents\\git-repo\\projects\\to-do-app\\ToDoApiClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

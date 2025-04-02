@@ -1,0 +1,1 @@
+public record SubscriptionResponse(Guid Id, SubscriptionType SubscriptionType);

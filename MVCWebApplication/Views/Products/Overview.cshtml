@@ -1,0 +1,13 @@
+﻿@model Product
+@{
+    ViewBag.Title = "Overview";
+}
+
+<h3>Products @ViewData["Title"]</h3>
+<div>
+    <h2>@Model.Name</h2>
+    <p>@Model.Price</p>
+    <p>@Model.Description</p>
+    <p>@Model.Category</p>
+</div>
+

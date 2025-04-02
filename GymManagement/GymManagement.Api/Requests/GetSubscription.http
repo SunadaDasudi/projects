@@ -1,0 +1,5 @@
+@host=http://localhost:5205 
+
+GET {{host}}/api/Subscriptions/27F8043D-22F2-438B-92B2-0FFBB192458D
+Accept: application/json
+Content-Type: application/json

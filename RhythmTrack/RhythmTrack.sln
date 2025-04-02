@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhythmTrack.API", "RhythmTrack.API\RhythmTrack.API.csproj", "{86BFE590-EBE8-4E2E-87F7-C377F533CA28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhythmTrack.Application", "RhythmTrack.Application\RhythmTrack.Application.csproj", "{0E99D362-8A5C-4F07-AC69-24FF0AA0D942}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhythmTrack.Infrastructure.Docker", "RhythmTrack.Infrastructure.Docker\RhythmTrack.Infrastructure.Docker.csproj", "{D85792F8-2FAC-4BAC-AA1D-67600DBB1685}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhythmTrack.Domain", "RhythmTrack.Domain\RhythmTrack.Domain.csproj", "{EE59BCCC-ED2B-4F4D-A1C8-F0BEA51B1EA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhythmTrack.Shared", "RhythmTrack.Shared\RhythmTrack.Shared.csproj", "{B5F90FF8-AF2C-471C-9655-21C4CE2B4F6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhythmTrack.Tests", "RhythmTrack.Tests\RhythmTrack.Tests.csproj", "{BEC21573-3FD0-4774-B969-CE357FED615F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86BFE590-EBE8-4E2E-87F7-C377F533CA28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86BFE590-EBE8-4E2E-87F7-C377F533CA28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86BFE590-EBE8-4E2E-87F7-C377F533CA28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86BFE590-EBE8-4E2E-87F7-C377F533CA28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E99D362-8A5C-4F07-AC69-24FF0AA0D942}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E99D362-8A5C-4F07-AC69-24FF0AA0D942}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E99D362-8A5C-4F07-AC69-24FF0AA0D942}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E99D362-8A5C-4F07-AC69-24FF0AA0D942}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D85792F8-2FAC-4BAC-AA1D-67600DBB1685}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D85792F8-2FAC-4BAC-AA1D-67600DBB1685}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D85792F8-2FAC-4BAC-AA1D-67600DBB1685}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D85792F8-2FAC-4BAC-AA1D-67600DBB1685}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE59BCCC-ED2B-4F4D-A1C8-F0BEA51B1EA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE59BCCC-ED2B-4F4D-A1C8-F0BEA51B1EA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE59BCCC-ED2B-4F4D-A1C8-F0BEA51B1EA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE59BCCC-ED2B-4F4D-A1C8-F0BEA51B1EA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5F90FF8-AF2C-471C-9655-21C4CE2B4F6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5F90FF8-AF2C-471C-9655-21C4CE2B4F6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5F90FF8-AF2C-471C-9655-21C4CE2B4F6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5F90FF8-AF2C-471C-9655-21C4CE2B4F6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEC21573-3FD0-4774-B969-CE357FED615F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEC21573-3FD0-4774-B969-CE357FED615F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEC21573-3FD0-4774-B969-CE357FED615F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEC21573-3FD0-4774-B969-CE357FED615F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

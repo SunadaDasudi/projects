@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BhwovJDhkbA=",
+  "dgSpecHash": "gdhsmBhGwBY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\sundas\\OneDrive - Avensia AB\\Documents\\personal\\learning\\c#\\WebApi\\StartToFinishExample1\\ToDoApiClient\\ToDoApiClient.csproj",
+  "projectFilePath": "C:\\Users\\sundas\\OneDrive - Avensia AB\\Documents\\git-repo\\projects\\to-do-app\\ToDoApiClient\\ToDoApiClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sundas\\.nuget\\packages\\system.io.pipelines\\9.0.1\\system.io.pipelines.9.0.1.nupkg.sha512",
     "C:\\Users\\sundas\\.nuget\\packages\\system.net.http.json\\9.0.1\\system.net.http.json.9.0.1.nupkg.sha512",

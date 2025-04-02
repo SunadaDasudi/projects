@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "R6gkP7+ONQA=",
+  "dgSpecHash": "9hXn8t2Wod0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\sundas\\OneDrive - Avensia AB\\Documents\\personal\\learning\\c#\\WebApi\\StartToFinishExample1\\TodoLibrary\\TodoLibrary.csproj",
+  "projectFilePath": "C:\\Users\\sundas\\OneDrive - Avensia AB\\Documents\\git-repo\\projects\\to-do-app\\TodoLibrary\\TodoLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sundas\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\sundas\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

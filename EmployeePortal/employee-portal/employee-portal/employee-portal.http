@@ -1,6 +1,0 @@
-@employee_portal_HostAddress = http://localhost:5052
-
-GET {{employee_portal_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
